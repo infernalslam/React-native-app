@@ -3,51 +3,39 @@
  * https://github.com/facebook/react-native
  * @flow
  */
-
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View
-} from 'react-native';
+} from 'react-native'
 
 class Myapp extends Component {
-  render() {
+  render () {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+      <Text style={styles.header}>King</Text>
+      <Text style={styles.header}>Mongkut</Text>
+      <Text style={styles.header}>University of</Text>
+      <Text style={styles.header}>Technology</Text>
       </View>
-    );
+    )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    backgroundColor: '#f4b400'
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+  header: {
+    color: '#050505',
+    fontWeight: 'bold',
+    fontSize: 120
+  }
+})
 
-AppRegistry.registerComponent('Myapp', () => Myapp);
+AppRegistry.registerComponent('Myapp', () => Myapp)
