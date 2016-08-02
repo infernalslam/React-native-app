@@ -46,3 +46,32 @@ set PATH=%PATH%;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools
 | img      |    Image      |  
 | span, p  | Text          |
 | ul/ol, li |  ListView, child items|
+
+# Day3
+## การทำการ Import ... from ..
+
+ ## Ex
+ # File temp.js
+ ```javascript
+ const message = "Hello React-Native เราจะมาทำ React"
+ module.exports = message
+ ```
+ # File index.android.js
+ ```javascript
+ import message from './temp.js'
+ ```
+
+# Finally
+```javascript
+import message from './temp.js'
+
+class Myapp extends Component {
+  render () {
+    return (
+      <View style={styles.container}>
+      <Text style={styles.header}>{message}</Text>
+      </View>
+    )
+  }
+}
+```
